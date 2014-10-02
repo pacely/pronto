@@ -3,3 +3,11 @@ php:
   - 5.5
   - 5.4
   - hhvm
+
+  before_script:
+    - composer self-update && composer --version
+    - composer update --dev
+
+  notifications:
+    email:
+      - chris@appgutta.no
