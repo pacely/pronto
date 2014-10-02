@@ -1,0 +1,11 @@
+{
+	"providers": [
+		"Pacely\\Pronto\\ProntoServiceProvider"
+	],
+	"aliases": [
+		{
+			"alias": "Image",
+			"facade": "Pacely\\Pronto\\Facades\\Pronto"
+		}
+	]
+}
