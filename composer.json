@@ -1,15 +1,16 @@
 {
     "name": "pacely/pronto",
+	"type": "library",
     "description": "Smart time parser",
     "license": "MIT",
 	"keywords": ["parse", "time", "smart", "timeparser", "quick-time"],
+	"homepage": "http://www.hirvi.no",
     "authors": [
         {
             "name": "Chris Magnussen",
             "email": "chris@pacely.no"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
 		"php": ">=5.4.0"
     },
@@ -20,5 +21,10 @@
 	},
     "require-dev": {
         "phpunit/phpunit": "4.2.*"
-    }
+    },
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1-dev"
+		}
+	}
 }
