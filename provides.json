@@ -4,7 +4,7 @@
 	],
 	"aliases": [
 		{
-			"alias": "Image",
+			"alias": "Pronto",
 			"facade": "Pacely\\Pronto\\Facades\\Pronto"
 		}
 	]
