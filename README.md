@@ -28,6 +28,8 @@ $ composer update
 ```
 
 ### Registering the Package
+If you are using Laravel Framework, we've made a Service Provider and Facade for you.
+
 Register the service provider within the `providers` array found in `app/config/app.php`:
 
 ```php
