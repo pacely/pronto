@@ -1,14 +1,55 @@
-# Pronto 
+# Simple time converter
 [![Build Status](https://travis-ci.org/pacely/Pronto.svg?branch=master)](https://travis-ci.org/pacely/Pronto)
 [![Latest Stable Version](https://poser.pugx.org/leaphly/cart-bundle/version.svg)](https://packagist.org/packages/pacely/pronto)
 [![Latest Unstable Version](https://poser.pugx.org/leaphly/cart-bundle/v/unstable.svg)](//packagist.org/packages/pacely/pronto)
 [![License](https://poser.pugx.org/leaphly/cart-bundle/license.svg)](https://packagist.org/packages/pacely/pronto)
 
-Simple way to parse and convert time inputs. 
+---
 
-### Formatters
+- [Installation](#installation)
+- [Registering the Package](#registering-the-package)
+- [Formatters](#formatters)
+- [Helper methods](#helper-methods)
 
-----------
+## Installation
+
+Add pronto to your composer.json file:
+
+```
+"require": {
+  "pacely/pronto": "dev-master"
+}
+```
+
+Use composer to install this package.
+
+```
+$ composer update
+```
+
+### Registering the Package
+Register the service provider within the `providers` array found in `app/config/app.php`:
+
+```php
+'providers' => array(
+	// ...
+	
+	'Pacely\Pronto\ProntoServiceProvider'
+)
+```
+
+Add an alias within the `aliases` array found in `app/config/app.php`:
+
+
+```php
+'aliases' => array(
+	// ...
+	
+	'Pronto' => 'Pacely\Pronto\Facades\Pronto',
+)
+```
+
+## Formatters
 
 #### Integer
 Matches integers only. `<=9` converts to hours, `>9` converts to minutes.
@@ -70,9 +111,7 @@ echo Pronto::parse('2 h 2 m')->toTime(); // 02:02
 echo Pronto::parse('1w 2d 20m')->toTime(); // 52:50
 ~~~
 
-### Helper methods
-
-------
+## Helper methods
 
 ##### `(int) parse(string)`
 Returns converted time in seconds
