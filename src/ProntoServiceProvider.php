@@ -13,7 +13,7 @@ class ProntoServiceProvider extends ServiceProvider {
 
 	public function boot()
 	{
-		$this->package('pacely/pronto');
+		//$this->package('pacely/pronto');
 	}
 
 	/**
