@@ -54,7 +54,7 @@ trait FormatTrait {
 	 */
 	public function toDecimal()
 	{
-		return (double) sprintf("%.2f", $this->time/60/60);
+		return (double) sprintf("%.2F", $this->time/60/60);
 	}
 
 	/**
