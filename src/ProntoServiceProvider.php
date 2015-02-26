@@ -11,11 +11,6 @@ class ProntoServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
-	public function boot()
-	{
-		//$this->package('pacely/pronto');
-	}
-
 	/**
 	 * Register the application services.
 	 *
@@ -35,5 +30,4 @@ class ProntoServiceProvider extends ServiceProvider {
 	{
 		return array('pronto');
 	}
-
 }

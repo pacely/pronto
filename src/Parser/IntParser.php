@@ -52,5 +52,4 @@ class IntParser implements ParserInterface {
 	{
 		$this->time = ($int > 9) ? $int*60 : $int*3600;
 	}
-
 }

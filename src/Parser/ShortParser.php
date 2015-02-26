@@ -52,7 +52,9 @@ class ShortParser implements ParserInterface {
 	private function setTime(array $time)
 	{
 		$seconds = 0;
-		for ($i = 0; $i < count($time); $i++)
+		$count = count($time);
+
+		for ($i = 0; $i < $count; $i++)
 		{
 			if (is_numeric($time[$i]))
 			{
@@ -133,5 +135,4 @@ class ShortParser implements ParserInterface {
 	{
 		return $num * 60;
 	}
-
 }
